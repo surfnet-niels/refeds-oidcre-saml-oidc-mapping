@@ -36,7 +36,7 @@ and "OPTIONAL" are to be interpreted as described in BCP 14, RFC 2119
 {{RFC2119}}.
 
 
-#Basic profile
+# Basic profile
 The basic profile implements a attribute to claim mapping in such a way that would allow an unmodified OIDC client to receive claims based on SAML attributes. This would allow existing SAML based Identity federation to add a proxy to onboard OIDC RPs, which seems the most common scenario at the time of writing.
 
 For servcies supporting this profile, the mapping MUST be implemented as is designated below
@@ -51,7 +51,7 @@ For servcies supporting this profile, the mapping MUST be implemented as is desi
 
 This profile is equivelent with the Reseach and Scholarship attribute bundle  as described in the Research and Scholarship Entity Category [R&S].
 
-###mail_verified
+### mail_verified
 OIDC supports a claim mail_verified which is part of the Standard claims [Standard claims], but has no equivelent in SAML attributes.
 
 It is RECOMMENDED to issue the mail_verified claim as part of the basic profile. If mail_verified is send, the following condition MUST be met: 
@@ -63,7 +63,7 @@ In this case it may be assumed the email service being used is under direct admi
 
 There is no representation of mail_verified in SAML attributes.
 
-#Advanced profile
+# Advanced profile
 The advance profile provides a more elaborate profile for mapping SAML attributes from the eduPerson, eduMember [eduMember] and SCHAC [SCHAC] schemas to OIDC Additional Claims [additional claims] and vise versa. 
 
 The advance profile retains the mappings as presented in the basic profile, but adds a direct, literal mapping from commonly used attributes from eduPerson and SCHAC into claims. These claims are represented in the edu scope (which currently is none existing!). In this way any attribute from the SAML world can be represented in OIDC claims without ambiguity.
@@ -108,5 +108,5 @@ It is the intent of the the OIDCre workinggroup to register the additional claim
 [additional claims]  https://openid.net/specs/openid-connect-core-1_0.html#AdditionalClaims
 [JWT specification] https://tools.ietf.org/html/draft-ietf-oauth-jwt-bearer-12
 
-##Acknowledgement
+## Acknowledgement
 This work is the result of the REFEDs (https://refeds.org/) OIDCre working group, with support from the AARC project (https://aarc-project.eu/) and the GEANT project (https://www.geant.org/Projects/GEANT_Project_GN4) and numerous individual contributions
