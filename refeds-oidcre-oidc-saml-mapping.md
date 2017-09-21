@@ -39,7 +39,7 @@ and "OPTIONAL" are to be interpreted as described in BCP 14, RFC 2119
 # Basic profile
 The basic profile implements a attribute to claim mapping in such a way that would allow an unmodified OIDC client to receive claims based on SAML attributes. This would allow existing SAML based Identity federation to add a proxy to onboard OIDC RPs, which seems the most common scenario at the time of writing.
 
-For servcies supporting this profile, the mapping MUST be implemented as is designated below
+For services supporting this profile, the mapping MUST be implemented as is designated below
 
 | OIDC Scope |  OIDC claim  |  eduPerson attribute |
 |---|---|---|
